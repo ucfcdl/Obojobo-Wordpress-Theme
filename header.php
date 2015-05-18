@@ -70,7 +70,7 @@
 						echo get_the_post_thumbnail( $post->ID );
 					elseif ( get_header_image() ) : ?>
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+							<img src="<?php bloginfo('template_directory'); ?>/images/main-header-blue.jpg" width="940" height="198" alt="" />
 						</a>
 					<?php endif; ?>
 			</div><!-- #branding -->
