@@ -144,9 +144,10 @@
 			</div>
 		</footer>
 
+	<?php if(defined('\AppCfg::GOOGLE_ANALYTICS_ID')): ?>
 		<script type='text/javascript'>
 		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-3665955-1']);
+		_gaq.push(['_setAccount', '<?php echo \AppCfg::GOOGLE_ANALYTICS_ID; ?>']);
 		_gaq.push(['_trackPageview']);
 
 		(function() {
@@ -155,5 +156,6 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		</script>
+	<?php endif ?>
 	</body>
 </html>
